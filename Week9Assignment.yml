@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Provisioning of S3 Bucket via Cloudformation
+
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: "myjenkinsbucket-oa"
+      Tags: 
+        - Key: Name
+          Value: JenkinsBucket
